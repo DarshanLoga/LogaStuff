@@ -33,7 +33,7 @@ describe('create the member acccount tests', ()=> {
             cy.log('login id is' +login);
             cy.log('email id is' +emailID);
     
-    
+    // Login the account with the email and password through /auth/login/member API call
             cy.request({
                 method: 'POST',
                 url: baseURL + '/auth/login/member?',
